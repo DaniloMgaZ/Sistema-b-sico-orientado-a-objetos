@@ -78,6 +78,7 @@ class SystemE(System):
                     Dados(self.name).removerE(self.name)
                     self.menu()
                 else:
+                    cliente = Dados(self.name).getCliente()
                     print(f"❌ Errou o caminho e atrasou o pedido!. A resposta era {x}")
                     print(f'Você não recebeu gorjeta!. R$30,00')
                     Dados(cliente).remover(cliente)
