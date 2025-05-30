@@ -82,7 +82,7 @@ class SystemE(System):
                     print(f"❌ Errou o caminho e atrasou o pedido!. A resposta era {x}")
                     print(f'Você não recebeu gorjeta!. R$30,00')
                     Dados(cliente).remover(cliente)
-                    Dados(self.name).remover(self.name)
+                    Dados(self.name).removerE(self.name)
                     self.menu()
             except ValueError:
                 print("\n⚠️ Entrada inválida! Só pode números.")
@@ -91,7 +91,7 @@ class SystemE(System):
                 print(f"❌ Errou o caminho e atrasou o pedido!. A resposta era {x}")
                 print(f'Você não recebeu gorjeta!. R$30,00')
                 Dados(cliente).remover(cliente)
-                Dados(self.name).remover(self.name)
+                Dados(self.name).removerE(self.name)
                 self.menu()
         else:
             print('\n Você ainda não pegou uma entrega!.')
