@@ -86,6 +86,7 @@ class SystemE(System):
             except ValueError:
                 print("\n⚠️ Entrada inválida! Só pode números.")
             except TimeoutOccurred:
+                cliente = Dados(self.name).getCliente()
                 print(f"❌ Errou o caminho e atrasou o pedido!. A resposta era {x}")
                 print(f'Você não recebeu gorjeta!. R$30,00')
                 Dados(cliente).remover(cliente)
